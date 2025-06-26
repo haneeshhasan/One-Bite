@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Bite - Sign Up</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f2f5;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .logo span {
+            color: #ff6b6b;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid #d1d5db;
+            background-color: #ffffff;
+            border-radius: 6px;
+            font-size: 16px;
+            color: #333;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus {
+            border-color: #ff6b6b;
+            box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.2);
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            background-color: #ff6b6b;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff5252;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #666;
+            margin: 20px 0;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .divider::before {
+            margin-right: 10px;
+        }
+
+        .divider::after {
+            margin-left: 10px;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .social-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            background-color: #ffffff;
+            color: #333;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-btn:hover {
+            background-color: #f3f4f6;
+        }
+
+        .social-btn img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+
+        .login-link a {
+            color: #ff6b6b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1 class="logo">One<span>Bite</span></h1>
+            <p class="subtitle">Sign up and start ordering!</p>
+            <form action="ValidationUser" method="post">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="name" placeholder="Choose a username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+                </div>
+                <button type="submit" class="btn">Create Account</button>
+            </form>
+            <div class="divider">Or continue with</div>
+            <div class="social-buttons">
+                <button class="social-btn">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 488 512'%3E%3Cpath fill='%234285F4' d='M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z'/%3E%3C/svg%3E" alt="Google">
+                    Google
+                </button>
+                <button class="social-btn">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath fill='%231877F2' d='M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z'/%3E%3C/svg%3E" alt="Facebook">
+                    Facebook
+                </button>
+            </div>
+            <p class="login-link">
+                Already have an account? <a href="signin.html">Sign In</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
